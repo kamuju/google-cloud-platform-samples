@@ -51,7 +51,7 @@ CS_BUCKET = '<your_cloud_storage_bucket>'
 
 
 def main():
-  """Perform OAuth 2 authorization, create image / instances, cleanup."""
+  """Perform OAuth 2 authorization, then start, list, and stop instance(s)."""
 
   # Perform OAuth 2.0 authorization.
   flow = flow_from_clientsecrets(CLIENT_SECRETS, scope=GCE_SCOPE)
