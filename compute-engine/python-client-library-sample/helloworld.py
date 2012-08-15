@@ -96,7 +96,7 @@ def main():
   # Stop the instance.
   try:
     gce_helper.stop_instance(instance_name)
-  except gce.ApieOperationError as e:
+  except gce.ApiOperationError as e:
     print 'Error stopping instance'
     print e
     return
